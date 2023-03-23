@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>form 사용하기</h3>
+
+    <!-- form 태그의 method 속성의 기본값이 get임, #은 현재 페이지에서 #을 붙인 주소로 이동(현재 페이지 다시 연다고 생각하면 됨)  -->
+    <form action="#" method="get">
+        <!-- id는 태그를 구분하기 위함 똑같은 이름이 여러개기 때문, class와 비슷한 역할 -->
+        <input type="text" name="userId" id="user-id">
+        <input type="password" name="userPw" id="user-pw">
+
+        <button type="submit">전송</button>
+    </form>
+
+    <br><hr><br>
+    <h3>fieldset 사용</h3>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <input type="text" name="userId2" id="user-id2">
+            <input type="password" name="userPw2" id="user-pw2">
+
+            <button type="submit">전송</button>
+        </fieldset>
+    </form>
+
+    <br><hr><br>
+
+
+    <!-- 포스트(암호화) 사용 -->
+    <h3>form 사용하기</h3>
+    <form action="#" method="post">
+        <input type="text" name="userId" id="user-id">
+        <input type="password" name="userPw" id="user-pw">
+        <button type="submit">전송</button>
+    </form>
+    <!-- form 바깥의 input은 서버에 제출되지 않는다 -->
+    <input type="text" name="userId3" id="user-id3">
+
+
+    <h3>fieldset 사용</h3>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <input type="text" name="userId2" id="user-id2">
+            <input type="password" name="userPw2" id="user-pw2">
+            <button type="submit">전송</button>
+        </fieldset>
+    </form>
+    
+
+</body>
+
+</html>
