@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>audio 사용하기</h3>
+
+        <audio src="2-24.mp3" controls autoplay muted></audio>
+        <audio muted autoplay controls loop>
+            <source src="2-24.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <br><hr><br>
+
+    <div>
+        <h3>video 사용하기</h3>
+
+        <video src="2-24_1.mp4" controls autoplay muted loop></video>
+        <video controls muted>
+            <!-- source는 audio, video태그의 자식태그로 여러개 사용 가능하며 일종의 백업 파일을 올려두는 용도로 사용된다 -->
+            <source src="2-24.mp4" type="video/mp4">
+            <source src="2-24_1.webm" type="video/webm">
+        </video>
+    </div>
+    <div>
+        <h3>유튜브 영상 사용하기</h3>
+        <!-- 유튜브 사용시 옵션 : -->
+        <!-- src에서 주소 뒤에 ? 붙이고 오토플레이, 뮤트, 루프 등 속성 부여 가능 -->
+        <iframe width="865" height="487" src="https://www.youtube.com/embed/U34kLXjdw90?autoplay=1&mute=1&loop=1" title="【Playlist】  지브리의 피아노 OST 모음은 제가 공부하면서들을 수있어서 좋았어요 💖 (나우시카에서 아리에 티까지)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>
